@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0 "">
+  <title>SURVEY FORM</title>
+  <link rel="stylesheet" href="cafestyles.css" />
+</head>
+<body>
+  <div class="container">
+  <h1 id="title">SURVEY FORM</h1>
+  <p id="description">We'd love to know more about your experience with our platform . Please fill out this short survey</p>
+  <form id = "survey-form" >
+     <label id="name-label"  for="name">Full Name: <input id="name" type="text"placeholder="Enter your full name" name="name"required ></label>
+     <label id="email-label"  for="email">Email: <input id="email" type="email" placeholder="Enter your email" name="email"required ></label>
+     <label id="number-label" for="number">Age: <input id="number" type="number" min="1" max="100" placeholder="Enter your number" name="number"required></label>
+     <label for="referal">How did you hear about us?<label />
+     <select id="dropdown" name="referal">
+               <option value="">Select an option</option>
+        <option value="social">Social Media</option>
+        <option value="friend">Friend or Family</option>
+        <option value="ads">Online Ads</option>
+    </select>
+    <fieldset>
+        <legend>Would you recommend us?</legend>
+        <label><input type="radio" name="recommend" value="yes" /> Yes</label>
+        <label><input type="radio" name="recommend" value="no" /> No</label>
+     </fieldset>
+     <fieldset>
+        <legend>What features do you use most? (Check all that apply)</legend>
+        <label><input type="checkbox" name="features" value="dashboard" /> Dashboard</label>
+        <label><input type="checkbox" name="features" value="reports" /> Reports</label>
+        <label><input type="checkbox" name="features" value="settings" /> Settings</label>
+      </fieldset>
+            <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your feedback here..." rows="3" cols="20"></textarea>
+    <button type="submit" id="submit">Submit</button>
+
+  </form> 
+</div>  
+</body>
+</html>
